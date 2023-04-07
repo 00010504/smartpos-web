@@ -1,0 +1,24 @@
+.react-date-picker {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--ck-colors-chakra-border-color);
+  transition: 0.15s ease-in-out;
+}
+
+.react-date-picker__wrapper {
+  font-weight: 500;
+  font-size: 15px;
+  height: 50px;
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+}
+
+.react-date-picker--open {
+  border: 1px solid #3182ce;
+  outline: 1px solid #3182ce;
+}
+
+.react-date-picker__inputGroup__input:invalid {
+  background-color: transparent;
+}

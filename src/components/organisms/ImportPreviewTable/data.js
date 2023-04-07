@@ -1,0 +1,108 @@
+export const importData = [
+  {
+    id: 1,
+    name: "Вода Hydrolife Eco без газа 1.5л",
+    article: "TSH-57313",
+    barcode: "4607005731301",
+    supply_price: 2500,
+    sales_price: 3000,
+  },
+  {
+    id: 2,
+    name: "Вода Hydrolife Eco без газа 1.5л",
+    article: "TSH-57313",
+    barcode: "4607005731301",
+    supply_price: 2500,
+    sales_price: 3000,
+  },
+  {
+    id: 3,
+    name: "Вода Hydrolife Eco без газа 1.5л",
+    article: "TSH-57313",
+    barcode: "4607005731301",
+    supply_price: 2500,
+    sales_price: 3000,
+  },
+  {
+    id: 4,
+    name: "Вода Hydrolife Eco без газа 1.5л",
+    article: "TSH-57313",
+    barcode: "4607005731301",
+    supply_price: 2500,
+    sales_price: 3000,
+  },
+  {
+    id: 5,
+    name: "Вода Hydrolife Eco без газа 1.5л",
+    article: "TSH-57313",
+    barcode: "4607005731301",
+    supply_price: 2500,
+    sales_price: 3000,
+  },
+  {
+    id: 6,
+    name: "Вода Hydrolife Eco без газа 1.5л",
+    article: "TSH-57313",
+    barcode: "4607005731301",
+    supply_price: 2500,
+    sales_price: 3000,
+  },
+  {
+    id: 7,
+    name: "Вода Hydrolife Eco без газа 1.5л",
+    article: "TSH-57313",
+    barcode: "4607005731301",
+    supply_price: 2500,
+    sales_price: 3000,
+  },
+  {
+    id: 8,
+    name: "Вода Hydrolife Eco без газа 1.5л",
+    article: "TSH-57313",
+    barcode: "4607005731301",
+    supply_price: 2500,
+    sales_price: 3000,
+  },
+  {
+    id: 9,
+    name: "Вода Hydrolife Eco без газа 1.5л",
+    article: "TSH-57313",
+    barcode: "4607005731301",
+    supply_price: 2500,
+    sales_price: 3000,
+  },
+  {
+    id: 10,
+    name: "Вода Hydrolife Eco без газа 1.5л",
+    article: "TSH-57313",
+    barcode: "4607005731301",
+    supply_price: 2500,
+    sales_price: 3000,
+  },
+];
+
+export const tableHeadings = [
+  "name",
+  "sku",
+  "quantity",
+  "supply_price",
+  "retail_price",
+];
+
+export const tableStyles = {
+  td: {
+    color: "color.text",
+    fontSize: "15px",
+    borderBottom: "none",
+    height: "64px",
+    paddingBottom: "10px !important",
+  },
+  th: {
+    textTransform: "none",
+    fontWeight: "700",
+    height: "56px",
+    color: "color.headingColor",
+    fontSize: "16px",
+    border: "none",
+  },
+};

@@ -1,0 +1,9 @@
+vite.config.js
+node_modules/
+src/helpers/delete_cols.js
+src/helpers/isCyclic.js
+src/helpers/parseQuery.js
+src/worker/
+src/helpers/setCaretPosition.js
+src/helpers/makeResizable.js
+src/helpers/tokenizer.js

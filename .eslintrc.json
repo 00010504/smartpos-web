@@ -1,0 +1,56 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "eslint:recommended",
+    "airbnb",
+    "prettier",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
+    "plugin:@tanstack/eslint-plugin-query/recommended"
+  ],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@tanstack/query"],
+  "rules": {
+    "quotes": ["error", "double"],
+    "camelcase": "off",
+    "arrow-body-style": "off",
+    "one-var": "off",
+    "react/no-unescaped-entities": 0,
+    "no-underscore-dangle": "off",
+    "react/jsx-props-no-spreading": [
+      "error",
+      { "html": "enforce", "custom": "ignore", "explicitSpread": "enfore" }
+    ],
+    "import/extensions": [
+      2,
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never"
+      }
+    ],
+    "no-console": "off",
+    "no-use-before-define": "off",
+    "no-nonoctal-decimal-escape": "off",
+    "valid-jsdoc": "error",
+    "no-restricted-globals": ["error", "addEventListener"],
+    "@tanstack/query/exhaustive-deps": "error",
+    "@tanstack/query/prefer-query-object-syntax": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [["@", "./src"]],
+        "extensions": [".js", ".jsx", ".json"]
+      }
+    }
+  }
+}

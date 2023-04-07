@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+yarn lint;
+
+# update deploy id
+last_line_removed=$(head -n -1 .env.production);
+echo "$last_line_removed" > ./.env.production;
+uuid=$(uuidgen);
+echo "VITE_DEPLOY_ID=$uuid" >> ./.env.production;
+git add ./.env.production;

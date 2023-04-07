@@ -1,0 +1,21 @@
+FROM node:16.17.0-alpine as builder 
+RUN apk update && apk add yarn
+
+RUN mkdir app
+WORKDIR /app
+
+ARG ENV="development"
+RUN echo "Building for ${ENV}"
+
+COPY package*.json ./
+RUN yarn install --network-timeout 1000000000
+
+COPY . ./
+RUN yarn build --mode ${ENV}
+
+FROM nginx:alpine
+RUN apk update && apk add -U tzdata && cp /usr/share/zoneinfo/Asia/Tashkent /etc/localtime && apk del tzdata
+COPY --from=builder /app/dist /build
+COPY nginx.conf /etc/nginx/nginx.conf
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

@@ -1,0 +1,96 @@
+.rdrDateRangePickerWrapper {
+  border-radius: 8px;
+  overflow: none;
+}
+
+.rdrDayActive .rdrStartEdge {
+  background-color: #256df6;
+  color: #fff;
+}
+
+.rdrStaticRangeSelected {
+  color: #256df6 !important;
+}
+
+.rdrDateDisplayWrapper {
+  background: var(--ck-colors-colors-sidebarBorder);
+}
+
+.rdrMonthAndYearWrapper,
+.rdrStaticRange,
+.rdrDefinedRangesWrapper {
+  background: var(--ck-colors-colors-heading);
+  padding-top: 0;
+}
+
+.rdrInputRanges,
+.rdrInputRangeInput {
+  background: var(--ck-colors-colors-heading);
+}
+
+.rdrInputRangeInput {
+  border: 1px solid var(--ck-colors-colors-greyD9);
+  color: var(--ck-colors-colors-text);
+}
+
+.rdrStaticRange {
+  border-bottom: 1px solid var(--ck-colors-colors-sidebarBorder);
+}
+
+.rdrStaticRangeLabel:hover {
+  background-color: var(--ck-colors-colors-sidebar) !important;
+}
+
+.rdrDefinedRangesWrapper {
+  border: none;
+}
+
+.rdrMonth {
+  background: var(--ck-colors-colors-sidebar);
+}
+
+.rdrMonthPicker select,
+.rdrYearPicker select {
+  color: var(--ck-colors-colors-headingColor);
+}
+
+.rdrDayNumber span {
+  color: var(--ck-colors-colors-text);
+}
+
+.rdrNextPrevButton,
+.rdrNextPrevButton {
+  background-color: var(--ck-colors-colors-formBorder);
+  transition: 0.2s all ease-in-out;
+}
+
+.rdrNextPrevButton:hover,
+.rdrNextPrevButton:hover {
+  background-color: var(--ck-colors-colors-formBorder);
+  opacity: 0.8;
+}
+
+.rdrPprevButton i {
+  border-color: transparent var(--ck-colors-colors-pipe) transparent transparent;
+}
+
+.rdrNextButton i {
+  border-color: transparent transparent transparent var(--ck-colors-colors-pipe);
+}
+
+.rdrDateInput input {
+  background: var(--ck-colors-colors-body) !important;
+  border: none;
+  color: var(--ck-colors-colors-text);
+  font-weight: 500;
+}
+
+.rdrDateInput {
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--ck-colors-colors-body);
+}
+
+.rdrDateDisplayItemActive {
+  border: 1px solid var(--ck-colors-brand-500);
+}
