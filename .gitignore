@@ -32,3 +32,6 @@ todo.txt
 # documentation
 docs
 .idea
+
+# Local Netlify folder
+.netlify
